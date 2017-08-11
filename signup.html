@@ -28,65 +28,39 @@
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                First Name<span class="req">*</span>
+                Name<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" id="txtName">
             </div>
         
             <div class="field-wrap">
               <label>
-                Last Name<span class="req">*</span>
+                Password<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input type="password" id="txtPass">
             </div>
           </div>
-
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
           
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
           <form action="/login">
-          <button type="submit" class="button button-block"/>Get Started</button>
-          <!-- </form> -->
+          <button onclick="createUser()">Get Started</button>
           </form>
+          <!-- <table border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Photo</th>
+              </tr>
+            </thead>
+            <tbody id="tblNames">
+
+            </tbody>
+          </table> -->
+          <!-- <script type="text/javascript" src="js/createUser"></script> -->
 
         </div>
         
-        <!-- <div id="login">   
-          <h1>Welcome Back!</h1>
-          
-          <form action="/profile" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Log In</button>
-          
-          </form>
-
-        </div> -->
+        
         
       </div><!-- tab-content -->
       

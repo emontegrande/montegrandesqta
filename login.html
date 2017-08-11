@@ -20,70 +20,46 @@
       </ul>
       
       <div class="tab-content">
-        <!-- <div id="signup">   
-          <h1>Sign Up for Free</h1>
-          
-          <form action="/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                First Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
-            </div>
         
-            <div class="field-wrap">
-              <label>
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off"/>
-            </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <button type="submit" class="button button-block"/>Get Started</button>
-          
-          </form>
-
-        </div> -->
         
         <div id="login">   
           <h1>Welcome Back!</h1>
           
          
-          
+          <div class="top-row">
             <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Name<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input type="text" id="txtName">
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input type="password" id="txtPass">
+          </div>
           </div>
           
           <p class="forgot"><a href="/signup">Not a member?</a></p>
           <form action="/profile">
-          <button class="button button-block"/>Log In</button>
+          <button onclick="createUser()">Log In</button>
           </form>
+          <!-- <table border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Photo</th>
+              </tr>
+            </thead>
+            <tbody id="tblNames">
+
+            </tbody>
+          </table> -->
+          <script type="text/javascript" src="js/createUser.js"></script>
+
 
         </div>
         
